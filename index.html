@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Material design site showcasing javascript image slider">
+    <title>Javascript Slider Demo With Material Design</title>
+    <link rel="stylesheet" href="css/imageSlider.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mdb.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark indigo">
+            <a class="navbar-brand" href="#">Header Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Section1 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Section2</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid" style="margin-top:40px;">
+        <div class="row">
+            <article class="col-md-6 col-sm-12">
+                <h2>Article header</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur soluta amet magnam veritatis unde, deserunt quod dolore. Ab ipsum quos earum omnis voluptatum! Modi quod quasi suscipit, eaque praesentium ad!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias consectetur id temporibus iste laboriosam dolorum quia voluptate dolor ducimus odio, obcaecati, perspiciatis atque itaque aspernatur praesentium similique accusantium earum doloremque.Ea sit nobis quam consequatur expedita, maiores neque quo accusantium ullam pariatur, ipsum aliquam rerum illo ipsa facilis iste? Explicabo distinctio possimus veniam quas labore adipisci illo consequatur, maiores reiciendis?</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur magni quaerat doloribus, neque corporis at laudantium sint repellat cumque, totam praesentium nemo aperiam quod nostrum minus culpa ducimus a odit!
+                Odio fugit similique rem, autem labore quasi distinctio qui tenetur voluptatum nostrum ea veniam optio deleniti asperiores, adipisci ab sit. Fugit incidunt quisquam veniam repellat est voluptates iure esse possimus?
+                Doloribus quam delectus accusantium consequatur repellendus distinctio tempora corporis fuga repellat ea. Beatae deserunt officiis accusamus pariatur voluptatem corporis officia tempore reprehenderit porro? Dolores dolor reiciendis quod quos. Nemo, quasi.</p>
+            </article>
+            <aside class="slideshow-container col-md-6 col-sm-12"> 
+                <div class="mySlides fade">
+                    <div class="number-text">1 / 3</div>
+                    <img src="images/image1.jpeg" alt="Computer, laptop, phone and tablet on a table" style="width:100%">
+                    <div class="caption-text">Come in, we serve code</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="number-text">2 / 3</div>
+                    <img src="images/image0.jpeg" alt="Computer developer working on a macbook" style="width:100%">
+                    <div class="caption-text">Coffee and code goes hand in hand</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="number-text">3 / 3</div>
+                    <img src="images/image2.jpeg" alt="Macbook on a table with notepad and coffee" style="width:100%">
+                    <div class="caption-text">I wish I had a fancy macbook</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer class="page-footer indigo center-on-small-only">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="title">Footer header</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="title">Links</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                        <li><a href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2017 Copyright: All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="imageSlider.js"></script>
+</body>
+</html>
